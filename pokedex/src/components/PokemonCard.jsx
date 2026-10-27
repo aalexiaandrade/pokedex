@@ -1,4 +1,6 @@
 
+import { getPokemonImage } from '../utils/pokemonImages'
+
 function PokemonCard({ pokemon, onSelect }) {
   return (
     <article
@@ -13,16 +15,35 @@ function PokemonCard({ pokemon, onSelect }) {
         }
       }}
     >
-      <h2>
-        #{pokemon.id} - {pokemon.name}
-      </h2>
+      <img
+        className="pokemon-image"
+        src={getPokemonImage(pokemon.id)}
+        alt={pokemon.name}
+        loading="lazy"
+      />
 
-      <p>HP: {pokemon.stats.hp}</p>
-      <p>Ataque: {pokemon.stats.attack}</p>
-      <p>Defesa: {pokemon.stats.defense}</p>
-      <p>Ataque especial: {pokemon.stats.specialAttack}</p>
-      <p>Defesa especial: {pokemon.stats.specialDefense}</p>
-      <p>Velocidade: {pokemon.stats.speed}</p>
+      <span className="pokemon-number">
+        Nº {String(pokemon.id).padStart(3, '0')}
+      </span>
+
+      <h2>{pokemon.name}</h2>
+
+      <div className="pokemon-types">
+        {pokemon.types.map((type) => (
+          <span
+            className={`type-badge type-${type.name.toLowerCase()}`}
+            key={type.id}
+          >
+            {type.name}
+          </span>
+        ))}
+      </div>
+
+      <div className="pokemon-quick-stats">
+        <span>HP {pokemon.stats.hp}</span>
+        <span>ATK {pokemon.stats.attack}</span>
+        <span>DEF {pokemon.stats.defense}</span>
+      </div>
     </article>
   )
 }
