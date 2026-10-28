@@ -2,6 +2,7 @@
 function TypeFilter({ types, selectedType, onTypeChange }) {
   return (
     <select
+      className="game-select"
       value={selectedType}
       onChange={(event) => onTypeChange(event.target.value)}
     >
