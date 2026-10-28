@@ -129,15 +129,15 @@ Os dados são importados diretamente na aplicação, permitindo que a interface 
 
 ### Tela principal — Pokédex
 
-![Tela principal da Pokédex](public/images/home.png)
+![Tela principal da Pokédex](public/images/telas/home.png)
 
 ### Detalhes de um Pokémon
 
-![Visualização dos detalhes de um Pokémon](public/images/detalhes.png)
+![Visualização dos detalhes de um Pokémon](public/images/telas/detalhes.png)
 
 ### Página de treinadores
 
-![Listagem de treinadores e suas equipes](public/images/treinador.png)
+![Listagem de treinadores e suas equipes](public/images/telas/treinador.png)
 
 
 ## 👩‍💻 Autoria
