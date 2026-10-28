@@ -1,3 +1,4 @@
+import { getPokemonImage } from '../utils/pokemonImages'
 
 function PokemonDetails({ pokemon, onBack }) {
   return (
@@ -5,7 +6,11 @@ function PokemonDetails({ pokemon, onBack }) {
       <button onClick={onBack}>
         Voltar para a Pokédex
       </button>
-
+      <img
+        className="pokemon-details-image"
+        src={getPokemonImage(pokemon.id)}
+        alt={pokemon.name}
+      />
       <h2>
         #{pokemon.id} - {pokemon.name}
       </h2>

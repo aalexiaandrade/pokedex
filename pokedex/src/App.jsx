@@ -13,6 +13,7 @@ function App() {
   const [selectedType, setSelectedType] = useState('')
   const [selectedPokemon, setSelectedPokemon] = useState(null)
   const [showTrainers, setShowTrainers] = useState(false)
+  const [selectedTrainer, setSelectedTrainer] = useState(null)
 
   const pokemonList = pokedexData.pokemon
   const types = pokedexData.types
@@ -52,7 +53,7 @@ function App() {
       </button>
     </nav>
 
-    {showTrainers ? (
+   {showTrainers ? (
       <TrainerList
         trainers={pokedexData.trainers}
         pokemonList={pokedexData.pokemon}

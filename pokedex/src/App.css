@@ -246,4 +246,257 @@ main > select {
   padding-left: 20px;
 }
 
+.pokemon-details-image {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin: 20px auto;
+}
 
+
+.trainer-select-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 16px;
+  border: 1px solid #e7e7eb;
+  border-radius: 18px;
+  background: white;
+  color: #27272a;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.trainer-select-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 9%);
+}
+
+.trainer-avatar {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #dc3545;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.trainer-select-name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.trainer-select-badges {
+  color: #777;
+  font-size: 14px;
+}
+
+.trainer-details {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.trainer-header {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.trainer-header h2 {
+  margin: 0 0 8px;
+  color: #dc3545;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.trainer-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.trainer-team-title {
+  margin: 12px 0 20px;
+  font-size: 23px;
+}
+
+.trainer-pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.trainer-pokemon-card {
+  padding: 18px;
+  border: 1px solid #e7e7eb;
+  border-radius: 18px;
+  background: white;
+  color: #27272a;
+  text-align: center;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 5%);
+}
+
+.trainer-pokemon-card > img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.trainer-pokemon-card h4 {
+  margin: 8px 0 12px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.trainer-pokemon-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.trainer-pokemon-stats p {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 0;
+  padding: 9px;
+  border-radius: 8px;
+  background: #f5f5f7;
+  color: #777;
+  font-size: 12px;
+}
+
+.trainer-pokemon-stats strong {
+  color: #27272a;
+  font-size: 16px;
+}
+
+.back-button {
+  margin: 8px 0 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+
+.trainer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.trainer-details {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #e7e7eb;
+  border-radius: 18px;
+  background: #fff;
+  color: #27272a;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 5%);
+}
+
+.trainer-header {
+  text-align: center;
+  padding: 8px 0 16px;
+}
+
+.trainer-header h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  color: #dc3545;
+  text-transform: capitalize;
+}
+
+.trainer-header p {
+  margin: 0;
+  color: #777;
+}
+
+.trainer-team-title {
+  margin: 8px 0 14px;
+  font-size: 17px;
+}
+
+.trainer-pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.trainer-pokemon-card {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.trainer-pokemon-card > img {
+  display: block;
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.trainer-pokemon-card h4 {
+  margin: 6px 0 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+  overflow-wrap: anywhere;
+}
+
+.trainer-pokemon-card .pokemon-types {
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.trainer-pokemon-card .type-badge {
+  padding: 4px 7px;
+  font-size: 10px;
+}
+
+.trainer-pokemon-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  text-align: left;
+}
+
+.trainer-pokemon-stats p {
+  min-width: 0;
+  padding: 6px;
+  margin: 0;
+  border-radius: 6px;
+  background: #eeeef1;
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+
+.trainer-pokemon-stats strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  color: #27272a;
+}
+
+@media (max-width: 380px) {
+  .trainer-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trainer-pokemon-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
